@@ -4,95 +4,74 @@
     <meta charset="UTF-8" />
     <title>Aliaksandr Miliutsin CV</title>
     <link href="styles.css" rel="stylesheet" />
+    <link href="normalize.css" rel="stylesheet" />
   </head>
-  <body>
-    <div class="container">
-      <table cellspacing="15">
-        <tr>
-          <td>
-            <img
-              src="myfoto.jpg"
-              alt="тут должно быть моё фото"
-              class="myfoto"
-            />
-          </td>
-          <td>
-            <h1>Александр Милютин</h1>
-            <p>
-              <strong>Я люблю ставить перед собой цели и добиваться их</strong>
-            </p>
-            <p>
-              <em>Умею найти выход из любой проблемы нестандартными путями</em>
-            </p>
-          </td>
-        </tr>
-      </table>
-      <hr />
-      <table class="information">
-        <tr>
-          <th>Мои социальные сети</th>
-          <th>Мои хобби</th>
-          <th>Мои работы</th>
-          <th>Мой опыт работы</th>
-        </tr>
-        <tr>
-          <td>
-            <ol>
-              <li>
-                <a href="https://vk.com/sanek_miliutin" target="_blank"
-                  ><strong>VK</strong></a
-                >
-              </li>
-              <li>
-                <a href="https://t.me/EnotikPoloscun" target="_blank"
-                  ><strong>Telegram</strong></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/sanek.miliutin/?igshid=YmMyMTA2M2Y="
-                  target="_blank"
-                  ><strong>Instagram</strong></a
-                >
-              </li>
-            </ol>
-          </td>
-          <td>
-            <ul>
-              <li>Общение</li>
-              <li>Спорт: фубол, ММА, киберспорт</li>
-              <li>Быстрая езда на автомобиле</li>
-              <li>Просмотр фильмов</li>
-            </ul>
-          </td>
-          <td>
-            <a href="myworks.html" target="_blank"
-              ><strong>Посмотреть работы</strong></a
-            >
-          </td>
-          <td class="skill">его пока что нет</td>
-        </tr>
-      </table>
-      <hr />
-      <h3 class="teelme">Связаться со мной</h3>
-      <form action="/">
-        <div class="upgroup">
-          <div class="form-group">
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите ваше имя" />
+  <body class="container">
+    <div class="media">
+      <div class="header">
+        <img src="myfoto.jpg" alt="тут должно быть моё фото" class="myfoto"/>
+        <div class="head-info">
+          <h1>Александр Милютин</h1>
+          <div class="about-me">
+            <strong>Я люблю ставить перед собой цели и добиваться их</strong><br>
           </div>
-          <div class="form-group">
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email" />
+          <div class="about-me">
+            <em>Умею найти выход из любой проблемы нестандартными путями</em><br>
           </div>
+        </div>
+      </div>
+      <hr />
+      <div class="cards">
+        <div class="card1">
+          <h4>Мои социальные сети</h4>
+          <ul>
+            <li>
+              <a href="https://vk.com/sanek_miliutin" target="_blank">VK</a>
+            </li>
+            <li>
+              <a href="https://t.me/EnotikPoloscun" target="_blank">Telegram</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/sanek.miliutin/?igshid=YmMyMTA2M2Y="target="_blank">Instagram</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card2">
+          <h4>Мои хобби</h4>
+          <ol>
+            <li>Общение</li>
+            <li>Спорт: фубол, ММА, киберспорт</li>
+            <li>Быстрая езда на автомобиле</li>
+            <li>Просмотр фильмов</li>
+          </щl>
+        </div>
+        <div class="card3">
+          <h4>Мои работы</h4>
+          <div class="card-info"><a href="myworks.html" target="_blank">Посмотреть работы</a></div>
+        </div>
+        <div class="card4">
+          <h4>Мой опыт работы</h4>
+          <div class="card-info">Его пока что нет</div>
+        </div>
+      </div>
+      <hr />
+      <h3>Связаться со мной</h3>
+      <!-- <form action=""> -->
+      <div class="upgroup">
+        <div class="form-group">
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" placeholder="Введите ваше имя" />
         </div>
         <div class="form-group">
-          <label for="text">Ваше сообщение:</label>
-          <textarea id="text" cols="50" rows="5"> </textarea>
+          <label for="email">Ваш email:</label>
+          <input type="email" id="email" placeholder="Введите email" />
         </div>
-        <input class="knopka" type="submit" value="Связаться!" />
-      </form>
+      </div>
+      <div class="form-group">
+        <label for="text">Ваше сообщение:</label>
+        <textarea id="text" cols="50" rows="5"> </textarea>
+      </div>
+      <input class="btn" type="submit" value="Отправить!" />
     </div>
-    <div style="margin-bottom: 100px"></div>
   </body>
 </html>
