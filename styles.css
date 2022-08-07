@@ -208,10 +208,16 @@ box-sizing: border-box;
   }
 }
 
-.card1 li:hover , .card3 a:hover{
+.card1 li:hover{
    background: #ea6767;
    border-radius: 5px;
 }
+
+.card3 a:hover{
+  background: #c3ea67;
+  border-radius: 5px;
+}
+
 
 .card-info{
   padding-top: 10px;
